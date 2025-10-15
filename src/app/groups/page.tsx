@@ -1,11 +1,10 @@
 import Groups from '@/components/Groups/Groups';
 import Page from '@/components/layout/Page/Page';
-import { META_DESCRIPTION, META_TITLE } from '@/constants/meta';
-import { type Metadata } from "next/types";
+import { type Metadata } from 'next/types';
 
 export const metadata: Metadata = {
-  title: `Группы - ${META_TITLE}`,
-  description: META_DESCRIPTION,
+  title: 'Группы - Вэб разработка ВКИ - Next.js шаблон',
+  description: 'Шаблон для веб-разработки с использованием Next.js, React Hook Form, Yup, SCSS, Eslint, TanStack Query (React Query)',
 };
 
 const GroupsPage = (): React.ReactNode => (

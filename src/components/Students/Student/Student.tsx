@@ -12,8 +12,15 @@ const Student = ({ student, onDelete }: Props): React.ReactElement => {
   };
 
   return (
-    <div className={`${styles.Student} ${student.isDeleted ? styles['--isDeleted'] : '' } `}>
-      {`${student.id} - ${student.lastName} ${student.firstName} ${student.middleName}`}
+    <div className={`${styles.Student} ${student.isDeleted ? styles['--isDeleted'] : '' }`}>
+      {student.id}
+      {' - '}
+      {student.lastName}
+      {' '}
+      {student.firstName}
+      {' '}
+      {student.middleName}
+      {' '}
       <button onClick={onDeleteHandler}>Удалить</button>
     </div>
   );
